@@ -8,6 +8,8 @@ dragula.js for kanban, lazyload on columns for large kanban data.
 
 context-menu.js for context menu, quill.js for rich editor.
 
+select2.js for future big data so that it is possible to do ajax loading and searching.
+
 ## Laravel 
 
 Used migrations, seeders, factories. Good DB architecture - see below overview section. Structure prepared for future functionality like sprints, projects, etc.
