@@ -23,9 +23,6 @@ Used migrations, seeders, factories. Good DB architecture - see below overview s
 ### New issue
 ![Скриншот](screens/new-issue.png)
 
-### Context menu
-![Скриншот](screens/context-menu.png)
-
 ## DB Structure
 
 ![Скриншот](screens/db-structure.png)
@@ -36,4 +33,4 @@ The API functionality was not implemented, but if such a need had arisen, my def
 
 Request -> DTO -> Controller -> Service / UseCase / Action -> Presenter -> Data.
 
-The date will be returned in the response in the controller.
+The data will be returned in the response in the controller.
