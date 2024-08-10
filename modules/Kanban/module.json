@@ -1,0 +1,11 @@
+{
+    "name": "Kanban",
+    "alias": "kanban",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Kanban\\Providers\\KanbanServiceProvider"
+    ],
+    "files": []
+}

@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/kanban",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Kanban\\": "app/",
+            "Modules\\Kanban\\Database\\Factories\\": "database/factories/",
+            "Modules\\Kanban\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Kanban\\Tests\\": "tests/"
+        }
+    }
+}

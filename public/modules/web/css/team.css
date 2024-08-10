@@ -1,0 +1,29 @@
+.team {
+    margin: 20px;
+}
+.team .person {
+    padding-bottom: 20px;
+    display: flex;
+}
+.team .person .avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+ }
+.team .person .social {
+    margin-left: 10px;
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+}
+.team .person .social .link {
+    margin-right: 5px;
+    text-decoration: none;
+}
+.team .person .info {
+    display: flex;
+    align-items: center;
+}
+.team .person .info .description {
+    margin: 0;
+}

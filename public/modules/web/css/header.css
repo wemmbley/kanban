@@ -1,0 +1,13 @@
+.header {
+    margin: 20px;
+}
+.available-projects {
+    width: 220px;
+}
+.mini-profile .avatar {
+    width: 32px;
+    height: 32px;
+}
+.mini-profile .greeting {
+    display: flex;
+}

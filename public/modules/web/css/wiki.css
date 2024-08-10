@@ -1,0 +1,25 @@
+.wiki-panel {
+    display: flex;
+    min-height: 500px;
+}
+.wiki-panel ul {
+    padding: 10px;
+}
+.wiki-tabs {
+    display: flex;
+    width: 200px;
+    border: none !important;
+    border-right: 1px solid #e5e5e5 !important;
+}
+.wiki-tabs ul li button {
+
+}
+.wiki-tabs li button {
+    border: none !important;
+    width: 100%;
+    text-align: start;
+    padding: 10px 20px;
+}
+.wiki-content {
+    margin: 20px;
+}
