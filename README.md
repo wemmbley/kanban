@@ -2,6 +2,7 @@
 
 > [!NOTE]  
 > 2 days of development for closing main back and front-end functionality.
+> 1 day for refactoring code and implementing tests.
 
 ## Technologies
 - Used `nwidart/modules` with `livewire` and `Bootstrap 5` for quick development.
