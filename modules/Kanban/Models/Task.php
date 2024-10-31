@@ -2,12 +2,12 @@
 
 namespace Modules\Kanban\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use Database\Factories\TaskFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Facades\DB;
 use Modules\Auth\Models\User;
-use Modules\Kanban\Database\Factories\TaskFactory;
 
 class Task extends Model
 {

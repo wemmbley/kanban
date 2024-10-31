@@ -13,7 +13,7 @@ class AuthFormComponent extends Component
 
     public $password;
 
-    public $keepLogged;
+    public $keepLogged = false;
 
     // Other fields
 
@@ -31,8 +31,8 @@ class AuthFormComponent extends Component
     {
         $credentials = $this->validate($this->rules);
 
-        if(Auth::attempt($credentials)) {
-            request()->session()->regenerate();
+        if(Auth::attempt($credentials, $this->keepLogged)) {
+            session()->regenerate();
 
             return redirect('/');
         }

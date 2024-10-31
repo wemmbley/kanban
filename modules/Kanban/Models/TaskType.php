@@ -2,9 +2,9 @@
 
 namespace Modules\Kanban\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use Database\Factories\TaskTypeFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Modules\Kanban\Database\Factories\TaskTypeFactory;
+use Illuminate\Database\Eloquent\Model;
 
 class TaskType extends Model
 {

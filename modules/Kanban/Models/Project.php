@@ -2,12 +2,12 @@
 
 namespace Modules\Kanban\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use Database\Factories\ProjectFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Modules\Auth\Models\User;
-use Modules\Kanban\Database\Factories\ProjectFactory;
 
 class Project extends Model
 {

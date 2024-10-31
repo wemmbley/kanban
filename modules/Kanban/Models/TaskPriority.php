@@ -2,10 +2,10 @@
 
 namespace Modules\Kanban\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use Database\Factories\TaskPriorityFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Modules\Kanban\Database\Factories\TaskPriorityFactory;
 
 class TaskPriority extends Model
 {
@@ -13,6 +13,7 @@ class TaskPriority extends Model
 
     protected $fillable = [
         'name',
+        'order',
         'image_url',
     ];
 

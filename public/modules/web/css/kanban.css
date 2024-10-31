@@ -5,7 +5,8 @@
 .kanban {
     display: flex;
     overflow-x: scroll;
-    height: 500px;
+    height: 79vh;
+    width: 97vw;
     margin: 0 20px 0 20px;
 }
 .kanban .title {
@@ -25,8 +26,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 256px;
-    min-width: 256px;
+    min-width: 12vw;
+    max-width: 100%;
     background-color: #f6f6f6;
     border-radius: 5px;
     margin-right: 10px;
