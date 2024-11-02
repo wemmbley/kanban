@@ -163,8 +163,8 @@ return [
             'routes' => ['path' => 'Routes', 'generate' => true],
 
             // tests/
-            'test-feature' => ['path' => 'tests/Feature', 'generate' => false],
-            'test-unit' => ['path' => 'tests/Unit', 'generate' => false],
+            'test-feature' => ['path' => 'Tests/Feature', 'generate' => false],
+            'test-unit' => ['path' => 'Tests/Unit', 'generate' => false],
         ],
     ],
 

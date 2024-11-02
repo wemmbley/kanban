@@ -12,7 +12,7 @@ use Modules\Kanban\Models\TaskPriority;
 use Modules\Kanban\Models\TaskType;
 
 // TODO: rename to TaskModalComponent
-// TODO: refactor code
+// TODO: refactor code, make universal
 class CreateTaskModalComponent extends Component
 {
     // Computed properties.
@@ -57,7 +57,7 @@ class CreateTaskModalComponent extends Component
     public function mount()
     {
         // Mount data for modal.
-        // FIXME: refactor in future, make select2 ajax requests. Cause users count may be >10k.
+        // FIXME: refactor in the future, make select2 ajax requests. Cause users count may be >10k.
         $this->projects = Project::all();
         $this->issueTypes = TaskType::all();
         $this->taskPriorities = TaskPriority::all();
@@ -121,7 +121,7 @@ class CreateTaskModalComponent extends Component
     #[On('kanban::card-context-menu-click-remove')]
     public function cardContextMenuRemove(int $cardId): void
     {
-
+        // todo: remove issue from kanban functionality
     }
 
     #[On('kanban::card-preload-data')]

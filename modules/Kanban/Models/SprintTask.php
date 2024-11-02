@@ -2,10 +2,10 @@
 
 namespace Modules\Kanban\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use Database\Factories\SprintTaskFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Modules\Kanban\Database\Factories\SprintTaskFactory;
 
 class SprintTask extends Model
 {

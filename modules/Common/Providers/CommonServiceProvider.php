@@ -13,12 +13,12 @@ class CommonServiceProvider extends ServiceProvider
     protected string $moduleNameLower = 'common';
 
     protected array $middlewareGroups = [
-        'main'=> [
+        'authenticated'=> [
             \Illuminate\Auth\Middleware\Authenticate::class,
             \Illuminate\Session\Middleware\AuthenticateSession::class,
             \Illuminate\Http\Middleware\HandleCors::class,
         ],
-        'skipAuth' => [],
+        'guest' => [],
     ];
 
     /**
@@ -29,7 +29,7 @@ class CommonServiceProvider extends ServiceProvider
         $this->registerCommands();
         $this->registerCommandSchedules();
         $this->registerTranslations();
-        $this->registerConfig();
+//        $this->registerConfig();
         $this->registerViews();
         $this->registerMiddlewareGroups();
         $this->loadMigrationsFrom(module_path($this->moduleName, 'Database/Migrations'));
@@ -50,8 +50,7 @@ class CommonServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->register(EventServiceProvider::class);
-        $this->app->register(RouteServiceProvider::class);
+
     }
 
     /**
@@ -113,6 +112,7 @@ class CommonServiceProvider extends ServiceProvider
         $this->loadViewsFrom(array_merge($this->getPublishableViewPaths(), [$sourcePath]), $this->moduleNameLower);
 
         $componentNamespace = str_replace('/', '\\', config('modules.namespace').'\\'.$this->moduleName.'\\'.ltrim(config('modules.paths.generator.component-class.path'), config('modules.paths.app_folder', '')));
+
         Blade::componentNamespace($componentNamespace, $this->moduleNameLower);
     }
 

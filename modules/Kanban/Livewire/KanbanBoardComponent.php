@@ -12,6 +12,7 @@ class KanbanBoardComponent extends Component
 {
     // Component data
 
+    /** @var int $projectId */
     public $projectId;
 
     // Mounted data

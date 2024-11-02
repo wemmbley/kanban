@@ -3,10 +3,10 @@
 namespace Modules\Auth\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Modules\Auth\Database\Factories\UserFactory;
 
 class User extends Authenticatable
 {

@@ -2,11 +2,11 @@
 
 namespace Modules\Kanban\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use Database\Factories\StageFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Modules\Kanban\Database\Factories\StageFactory;
 
 class Stage extends Model
 {

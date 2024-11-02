@@ -1,5 +1,13 @@
 <?php
 
+/*
+ * This file is part of my handmade tools.
+ *
+ * (c) Holiev Rustam <golevv.rustam@gmail.com>
+ *
+ * This code provided by MIT license.
+ */
+
 namespace Modules\Common\Console;
 
 use Illuminate\Console\Command;
